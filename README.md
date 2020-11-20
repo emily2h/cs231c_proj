@@ -1,25 +1,8 @@
-This is the README.md from the original deep-image-prior repository. 
+This is the README.md from the original deep-image-prior repository, with some changes to adapt to this project.
 
-**Warning!** The optimization may not converge on some GPUs. We've personally experienced issues on Tesla V100 and P40 GPUs. When running the code, make sure you get similar results to the paper first. Easiest to check using text inpainting notebook.  Try to set double precision mode or turn off cudnn. 
+In this project, we are developing a tool to do digital + automatic restoration of paintings and evaluate different methods. You can run through the script in inpainting.ipynb and place your own images of paintings you wish to restore there. 
 
-# Deep image prior
-
-In this repository we provide *Jupyter Notebooks* to reproduce each figure from the paper:
-
-> **Deep Image Prior**
-
-> CVPR 2018
-
-> Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky
-
-
-[[paper]](https://sites.skoltech.ru/app/data/uploads/sites/25/2018/04/deep_image_prior.pdf) [[supmat]](https://box.skoltech.ru/index.php/s/ib52BOoV58ztuPM) [[project page]](https://dmitryulyanov.github.io/deep_image_prior)
-
-![](data/teaser_compiled.jpg)
-
-Here we provide hyperparameters and architectures, that were used to generate the figures. Most of them are far from optimal. Do not hesitate to change them and see the effect.
-
-We will expand this README with a list of hyperparameters and options shortly.
+Links to the github repositories used and papers are included in inpainting.ipynb. 
 
 # Install
 
@@ -62,15 +45,5 @@ you will be provided an URL through which you can connect to the Jupyter noteboo
 
 ## Google Colab
 
-To run it using Google Colab, click [here](https://colab.research.google.com/github/DmitryUlyanov/deep-image-prior) and select the notebook to run. Remember to uncomment the first cell to clone the repository into colab's environment.
+To run it using Google Colab, click [here](https://colab.research.google.com/github/emily2h/cs231c_proj/) and select the inpainting.ipynb notebook to run. 
 
-
-# Citation
-```
-@article{UlyanovVL17,
-    author    = {Ulyanov, Dmitry and Vedaldi, Andrea and Lempitsky, Victor},
-    title     = {Deep Image Prior},
-    journal   = {arXiv:1711.10925},
-    year      = {2017}
-}
-```
